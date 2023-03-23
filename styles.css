@@ -154,6 +154,11 @@ input[type=text] {
       }     
 
 @media only screen and (max-width: 600px) {
+    
+     body{
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
         .cartoon {
           position: absolute;
           top: 0%;
