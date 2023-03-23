@@ -158,11 +158,10 @@ input[type=text] {
   body{
     margin-top: 30px;
     margin-bottom: 30px;
-    overflow: hidden;
   }
         .cartoon {
           position: absolute;
-          top: 10%;
+          top: 18%;
           left: 0%;
           transform: translate(0%, 0%);
           width: 60vmin;
