@@ -8,33 +8,26 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <div id="pocetniekran">
-        <h2 class="prvih2">Molimo ukucajte ime da bismo<br> spremili vašu rodjendansku cestitku</h2>
+        <h2 class="prvih2">Molimo ukucajte ime da bismo<br> spremili vašu rođendansku čestitku</h2>
         <input type="text" id="fname" name="fname" placeholder="Tvoje imence ovde u vokativu">
-        <h2>Molimo izaberite pozadinu<br> vase cestitke</h2>
-        <form action="/action_page.php">
-            
-            <input type="radio" id="riska" name="fav_language" value="HTML">
-            <label for="html">RISKA</label><br>
-            <input type="radio" id="milosevic" name="fav_language" value="CSS">
-            <label for="css">SLOBODAN MILOSEVIĆ</label><br>
-            <input type="radio" id="rihanna" name="fav_language" value="JavaScript">
-            <label for="javascript">RIHANNA</label><br>
-          <input type="radio" id="sundjerbob" name="fav_language" value="HTML">
-            <label for="html">SUNDJER BOB</label><br>
-           
-          </form>
-          
+        <h2>Molimo izaberite pozadinu<br> vaše čestitke</h2>
+        <div class="odgovori">
+            <h3 id="riska">RISKA</h3>
+            <h3 id="milosevic">SLOBODAN MILOšEVIC</h3>
+            <h3 id="rihanna">RIHANNA</h3>
+            <h3 id="sundjerbob"id="riska">SUNDJER BOB</h3>
+        </div>
+        
     </div>
-
-
     <div class="cartooncontainer">
         <div class="cartoon hidden" id="cartoon">
-            <div class="bubble b r hb hidden" id="writingsincartoon">Srecan rodjendan!<br><span id="ovdeideime">MIMI</span></div>
+        <div class="bubble b r hb hidden" id="writingsincartoon">Srecan rodjendan<br><span id="ovdeideime">MIMI</span></div>
     </div>
+    <button class="hidden" id="refreshbutton" type="button">Vrati me!</button>
 
     
     <script src="script.js"></script>
-    <div>
 </body>
 </html>

@@ -1,12 +1,8 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500&family=Kavoon&display=swap');
-
-
 body {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-image: url("https://images.pexels.com/photos/7135019/pexels-photo-7135019.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-    /* background-image: url("riska.jpg"); */
     background-repeat: no-repeat;
     background-size: cover;
     margin:0;
@@ -14,7 +10,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* overflow: hidden; */
 }
 
 #pocetniekran {
@@ -24,14 +19,41 @@ body {
 
 
 h2 {
- 
-    font-family: "Fredoka";
     text-align: center;
     line-height: 30px;
-    color: rgb(235, 138, 244);
+    color: rgb(43, 43, 43);
     border-radius: 10px;
     background-color: white;
     padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.odgovori {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+h3 {
+  border-radius: 10px;
+  flex-basis: 48.5%;
+  height: 50%;
+  cursor: pointer;
+  background-color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  margin-top: 0px;
+  color: rgb(28, 69, 205);
+}
+
+h3:hover {
+  color: black;
+    box-shadow: 6px 6px 0 black;
 }
 
 .prvih2 {
@@ -46,12 +68,6 @@ input[type=text] {
     border-radius: 10px;
   }
 
-  label {
-    color: rgb(28, 69, 205);
-    font-size: 20px;
-    line-height: 25px;
-  }
-
 .cartooncontainer {
     width: 80%;
 }
@@ -64,11 +80,6 @@ input[type=text] {
     width: 80vmin;
     height: 80vmin;
   }
-
- 
-
-  
-  
   
   .cartoon div {
     position: absolute;
@@ -102,7 +113,7 @@ input[type=text] {
   flex-direction: column;
   text-align: center;
   font-size: 26px;
-  background: #ffd;
+  background: rgb(249, 249, 243);
   box-shadow: 0 -0.25vmin, 0 0.125vmin;
   font-family: "Comic Sans", "Comic Neue", sans-serif;
   line-height: 40px;
@@ -115,15 +126,71 @@ input[type=text] {
   bottom: -51%;
   border-radius: 50%;
   left: 10%;
-  box-shadow: 0.5vmin 0, 2vmin -0.5vmin #ffd, 2vmin -0.5vmin 0 0.5vmin;
+  box-shadow: 0.5vmin 0, 2vmin -0.5vmin rgb(249, 249, 243), 2vmin -0.5vmin 0 0.5vmin;
   clip-path: polygon(0% 49%, 150% 48%, 150% 100%, 0% 100%);
-}
-
-.hidden {
-    display: none;
 }
 
 .milosevicsettings {
     font-size: 10px;
       }
+
+#refreshbutton {
+  transform: translateX(+550px);
+  transform: translateY(+200px);
+  width: 200px;
+  height: 40px;
+  font-size: 24px;
+  border-radius: 10px;
+        }
+      
+#refreshbutton:hover{
+  box-shadow: 6px 6px 0 #000;
+  cursor: pointer;
+        }
+      
+      
+.hidden {
+   display: none;
+      }     
+
+@media only screen and (max-width: 600px) {
+        .cartoon {
+          position: absolute;
+          top: 0%;
+          left: 0%;
+          transform: translate(0%, 0%);
+          width: 60vmin;
+          height: 60vmin;
+        }
+
+
+        .bubble {
+          width: 50%;
+          height: 25%;
+          left: 100%;
+          top: 10%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          text-align: center;
+          font-size: 16px;
+          background: rgb(249, 249, 243);
+          box-shadow: 0 -0.25vmin, 0 0.125vmin;
+          font-family: "Comic Sans", "Comic Neue", sans-serif;
+          line-height: 16px;
+        }
+
+        #refreshbutton {
+          transform: translateX(+550px);
+          transform: translateY(+200px);
+          width: 150px;
+          height: 40px;
+          font-size: 20px;
+          border-radius: 10px;
+        
+          }
+        
+}
+
 
