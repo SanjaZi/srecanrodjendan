@@ -154,14 +154,15 @@ input[type=text] {
       }     
 
 @media only screen and (max-width: 600px) {
-    
-     body{
-    margin-top: 100px;
-    margin-bottom: 100px;
+
+  body{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    overflow: hidden;
   }
         .cartoon {
           position: absolute;
-          top: 0%;
+          top: 10%;
           left: 0%;
           transform: translate(0%, 0%);
           width: 60vmin;
@@ -193,9 +194,5 @@ input[type=text] {
           height: 40px;
           font-size: 20px;
           border-radius: 10px;
-        
-          }
-        
+          }       
 }
-
-
